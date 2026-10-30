@@ -1,0 +1,255 @@
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+.group {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  background-color: #f5f0dc;
+}
+
+body {
+ background-color: #eae2b7;
+ color: #003049;
+ font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+ padding: 40px;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+ font-family: "Playfair Display", Times, serif;
+ text-align: center;
+}
+
+
+
+/* Header */
+header {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003049;
+  color: #eae2b7;
+  padding: 20px;
+}
+
+/*This rule affects every div on your page */
+/* Containers */
+div {
+ background-color: #eae2b7;
+ margin: auto;
+ width: 600px;
+}
+
+/* Fix the About section containers */
+#about .about-section,
+#about .about-top,
+#about .about-image,
+#about .about-intro,
+#about .about-background {
+  width: auto;
+  margin: 0;
+}
+
+#about .about-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about .about-top {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+#about .about-image {
+  flex: 0 0 200px;
+}
+
+#about .about-image img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+}
+
+#about .about-intro {
+  flex: 1;
+  min-width: 0;
+}
+
+#about .about-intro h3,
+#about .about-background h3 {
+  text-align: center;
+}
+
+#about .about-intro p,
+#about .about-intro ul,
+#about .about-background p {
+  text-align: left;
+}
+
+#about .about-background {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f5f0dc;
+  border-radius: 8px;
+}
+
+article {
+ padding: 50px 0;
+}
+
+
+article div {
+ text-align: center;
+ width: 100%;
+}
+
+
+/* Paragraphs */
+p {
+ line-height: 1.5;
+}
+
+
+/* Links */
+a:link {
+ color: #d62828;
+}
+
+
+a:hover {
+ color: #f77f00;
+}
+
+/*This makes the navigation links cream-colored to contrast with the dark blue header and removes their underlines */
+
+nav a {
+  padding-left: 20px;
+  color: #eae2b7;
+  text-decoration: none;
+}
+
+/* Images */
+img {
+ width: 100%;
+ max-width: 200px;
+ height: auto;
+}
+
+
+.image-circle {
+ border: 2px solid #003049;
+ border-radius: 50%;
+}
+
+
+/* Footer */
+footer {
+ text-align: center;
+}
+
+
+/* Other page elements */
+hr {
+ border: 1px solid black;
+}
+*/
+
+/* About section redesign */
+#about .about-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about .about-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+#about .about-image {
+  flex: 0 0 200px;
+  width: 200px;
+  margin: 0;
+}
+
+#about .about-image img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+#about .about-intro {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  margin: 0;
+}
+
+#about .about-intro h3,
+#about .about-background h3 {
+  text-align: center;
+}
+
+#about .about-intro p,
+#about .about-intro ul,
+#about .about-background p {
+  text-align: left;
+}
+
+#about .about-background {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f5f0dc;
+  border-radius: 8px;
+}
+
+/* Portfolio section redesign */
+#portfolio .portfolio-section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f5f0dc;
+}
+
+#portfolio .portfolio-section > section {
+  flex: 1;
+  min-width: 0;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  background-color: #f5f0dc;
+  border-radius: 8px;
+}
+
+#portfolio .portfolio-section > section > div {
+  width: 100%;
+  margin: 0;
+}
+
+#portfolio .portfolio-section img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#portfolio .portfolio-section p {
+  font-size: 14px;
+  text-align: left;
+}
