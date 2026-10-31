@@ -215,6 +215,7 @@ hr {
   border-radius: 8px;
 }
 
+
 /* Portfolio section redesign */
 #portfolio .portfolio-section {
   display: flex;
@@ -224,7 +225,6 @@ hr {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: #f5f0dc;
 }
 
 #portfolio .portfolio-section > section {
